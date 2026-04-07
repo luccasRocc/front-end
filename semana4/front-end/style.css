@@ -1,0 +1,88 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    background: #04f6de;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container central */
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background: rgb(18, 1, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Itens da lista */
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #e3e7eb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover (interação) */
+li:hover {
+    background: #00ff00;
+    color: white;
+    transform: scale(1.04);
+    text-align: center;
+}
+
+/* Detalhes */
+#user-details {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 10px solid #007bff;
+    background: #ffffff;
+    opacity: 0;
+    animation: aparecer 5s forwards;
+}
+
+/* Botão */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #dc3545;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botão */
+button:hover {
+    background: #a71d2a;
+}
+
+/* ===============================
+   ANIMAÇÃO COM KEYFRAMES
+================================ */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
